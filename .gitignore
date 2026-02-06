@@ -1,0 +1,19 @@
+# Dune build artifacts
+_build/
+*.install
+*.merlin
+
+# Editor files
+*~
+*.swp
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# opam switch
+_opam/
+
+# Test database
+/tmp/phitodo_test.db

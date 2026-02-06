@@ -1,0 +1,21 @@
+(include_subdirs unqualified)
+
+(library
+ (name phitodo)
+ (libraries
+  minttea
+  tty
+  riot
+  sqlite3
+  cohttp-eio
+  eio_main
+  yojson
+  otoml
+  uuidm
+  ptime
+  ptime.clock.os
+  base64
+  uri
+  fmt
+  logs)
+ (preprocess (pps ppx_deriving_yojson)))

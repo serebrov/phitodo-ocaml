@@ -1,0 +1,33 @@
+(lang dune 3.0)
+(name phitodo_tui)
+(generate_opam_files true)
+
+(package
+ (name phitodo_tui)
+ (synopsis "A TUI task manager with GitHub and Toggl integration")
+ (description "phitodo-tui-ocaml is a terminal-based task manager featuring
+the Elm/TEA architecture, SQLite persistence, GitHub issues/PR tracking,
+and Toggl time entry integration.")
+ (maintainers "Phitodo Contributors")
+ (authors "Phitodo Contributors")
+ (license MIT)
+ (homepage "https://github.com/phitodo/phitodo-tui-ocaml")
+ (bug_reports "https://github.com/phitodo/phitodo-tui-ocaml/issues")
+ (depends
+  (ocaml (>= 5.1))
+  (minttea (>= 0.0.2))
+  (tty (>= 0.0.2))
+  (riot (= 0.0.5))
+  (sqlite3 (>= 5.1.0))
+  (cohttp-eio (>= 6.0.0))
+  (eio_main (>= 1.0))
+  (yojson (>= 2.1.0))
+  (ppx_deriving_yojson (>= 3.7.0))
+  (otoml (>= 1.0.5))
+  (uuidm (>= 0.9.8))
+  (ptime (>= 1.1.0))
+  (base64 (>= 3.5.0))
+  (uri (>= 4.4.0))
+  (fmt (>= 0.9.0))
+  (logs (>= 0.7.0))
+  (alcotest (and :with-test (>= 1.7.0)))))
